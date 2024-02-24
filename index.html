@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69a8a53a16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="topic">Expense Tracker</h1>
+        <div class="balance">
+            <h3 class="balance">My Balance</h3>
+            <i class="fa-solid fa-indian-rupee-sign"></i><span id="balance">0000</span>
+        </div>
+        <div class="track-box">
+            <div class="income">
+                <p style="color: black;">Income</p>
+                <i class="fa-solid fa-indian-rupee-sign"></i><span id="income">0000</span>
+            </div>
+            <div class="expense">
+                <p style="color: black;">Expense</p>
+                <i class="fa-solid fa-indian-rupee-sign"></i><span id="expense">0000</span>
+            </div>
+
+        </div>
+
+        <div class="history-box">
+            <h3>HISTORY</h3>
+            <div id="history"></div>
+        </div>
+        <hr>
+
+        <div class="transaction-box">
+            <h2>Add New Transaction</h2>
+            <div class="text">
+                <p>Text</p>
+                <input type="text" name="" id="text" placeholder="Enter Text">
+            </div>
+            <div class="amount">
+                <p>Amount</p>
+                <p>(negative-expense,positive-expense)</p>
+                <input type="text" name="" id="amount" placeholder="Enter Amount" >
+            </div>
+            <button class="submit-btn" onclick="tracker()">
+                Add Transaction
+            </button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
